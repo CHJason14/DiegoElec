@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Contacts</title>
+    <meta charset="utf-8">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/superfish.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link href='//fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/forms.js"></script>
+    <script>
+        $(window).load( function(){
+            $().UItoTop({ easingType: 'easeOutQuart' });         
+            $('form').forms({
+                ownerEmail:'#'
+            });
+        });
+    </script>
+
+     </head>
+     <body>
+<!--==============================header=================================-->
+<header>
+    <div class="container_12">
+        <div class="row">
+            <div class="grid_12">
+                <h1><a href="index.html">Diego</a><span>Entreprise d'éléctricité</span></h1>
+                <nav>
+                    <ul class="sf-menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index-1.html">A propos</a></li>
+                        <li><a href="index-2.html">Services</a></li>
+                        <li class="current"><a href="index-3.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--=======content================================-->
+
+<section class="content">
+    <div class="bord-1">
+        <div class="container_12">
+            <div class="row">
+                <div class="map_wrapper grid_8">
+                    <h2 class="v1">Où me trouvez ?</h2>
+                    <div class="grid_inside">
+                        <div class="grid_5">
+                            <iframe id="map_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40490.52886584617!2d3.0297310935637385!3d50.63346878403826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d579b3256e11%3A0x40af13e81646360!2sLille!5e0!3m2!1sfr!2sfr!4v1729289995606!5m2!1sfr!2sfr"></iframe>
+                        </div>
+                        <div class="grid_3">
+                            <h3 class="p3">Diego</h3>
+                            <dl class="address">
+                                <dt>38 rue du bois<br>
+                                Lille, 59000</dt>
+                                <dd><span>Téléphone:</span>00000000</dd>
+                                <dd><span class="e-mail">E-mail: <a href="#" class="demo underline">mail@demolink.org</a></span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <article class="grid_4">
+                    <h2 class="v1">Formulaire de contact</h2>
+                    <form id="contact-form">
+                        <div class="success">Mail envoyé avec succès!<br>
+                            <strong>Nous vous répondrons le plus vite possible.</strong>
+                        </div>
+                        <fieldset>
+                            <label class="name">
+                                <input type="text" value="Nom:">
+                                <span class="error">*Le nom n'est pas valide.</span> 
+                                <span class="empty">*Ce champs doit être remplit.</span>
+                            </label>
+                            <label class="email">
+                                <input type="email" value="E-mail:">
+                                <span class="error">*L'adresse n'est pas valide.</span> 
+                                <span class="empty">*Ce champs doit être remplit.</span>
+                            </label>
+                            <label class="phone">
+                                <input type="tel" value="Téléphone:">
+                                <span class="error">*Ce numéro n'est pas valide.</span> 
+                                <span class="empty">*Ce champs doit être remplit.</span>
+                            </label>
+                            <label class="message">
+                                <textarea>Message:</textarea>
+                                <span class="error">*Le message est trop court.</span> 
+                                <span class="empty">*Ce champs doit être remplit.</span>
+                            </label>
+                            <div class="form_buttons clearfix">
+                                <a href="#" class="btn-1" data-type="reset"> Reset</a>
+                                <a href="#" class="btn-1" data-type="submit">Envoyer</a>
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=======footer=================================-->
+<footer>
+    <div class="bord-2">
+        <div class="container_12">
+            <div class="row">
+                <div class="fright">
+                    <ul class="list-services clearfix">
+                        <li><a class="list-services-1" href="#"><span class="sp-1"></span><span class="sp-2"></span></a></li>
+                        <li><a class="list-services-2" href="#"><span class="sp-1"></span><span class="sp-2"></span></a></li>
+                    </ul>
+                </div>
+                <div class="fleft">
+                    <a href="index.html" class="foot-logo">Diego</a>
+                    <span class="text-1">&copy; 2024 | <a href="index-4.html" class="h-underline">Charte politique</a></span>
+                    <!--{%FOOTER_LINK} -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
